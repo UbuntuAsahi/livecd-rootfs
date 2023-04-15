@@ -706,7 +706,8 @@ case $PROJECT in
 				LIVE_TASK='ubuntu-live'
 				add_task install minimal standard ubuntu-desktop
 				add_task live ubuntu-desktop-minimal-default-languages ubuntu-desktop-default-languages
-				KERNEL_FLAVOURS='generic-hwe-22.04'
+				KERNEL_FLAVOURS='asahi'
+				add_package live ubuntu-asahi
 				if [ "$SUBARCH" = "intel-iot" ]; then
 					KERNEL_FLAVOURS='intel-iotg'
 				fi
@@ -801,11 +802,12 @@ case $PROJECT in
 			*)
 				touch config/universe-enabled
 				PASSES_TO_LAYERS="true"
-				KERNEL_FLAVOURS='generic-hwe-22.04'
+				KERNEL_FLAVOURS='asahi'
 				add_task minimal minimal standard ubuntu-desktop-minimal ubuntu-desktop-minimal-default-languages
 				add_task minimal.standard ubuntu-desktop ubuntu-desktop-default-languages
 				add_task minimal.standard.live ubuntu-live
 				add_package minimal cloud-init
+				add_package minimal ubuntu-asahi
 				remove_package minimal.standard.live ubiquity-frontend-gtk
 				add_snap minimal.standard.live ubuntu-desktop-installer/classic
 

@@ -1,3 +1,13 @@
+livecd-rootfs (2.834) lunar; urgency=medium
+
+  [ Tobias Heider ]
+  * Install asahi kernel and meta
+
+  [ Dimitri John Ledkov ]
+  * auto/config: Add support for ubuntu core arm64 generic images (LP: #2009067)
+
+ -- Tobias Heider <me@tobhe.de>  Sat, 15 Apr 2023 13:01:19 +0200
+
 livecd-rootfs (2.836) mantic; urgency=medium
 
   * canary: include cryptsetup in the live layer

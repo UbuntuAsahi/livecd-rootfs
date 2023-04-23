@@ -1,3 +1,9 @@
+livecd-rootfs (2.835) lunar; urgency=medium
+
+  * Install asahi packages for desktop-preinstalled
+
+ -- Tobias Heider <tobias.heider@canonical.com>  Sun, 23 Apr 2023 02:13:41 +0200
+
 livecd-rootfs (2.834) lunar; urgency=medium
 
   [ Tobias Heider ]

@@ -2,6 +2,7 @@ livecd-rootfs (2.838asahi1) lunar; urgency=medium
 
   [ Tobias Heider ]
   * Install asahi kernel and meta
+  * Install asahi packages for desktop-preinstalled
 
   [ Dimitri John Ledkov ]
   * auto/config: Add support for ubuntu core arm64 generic images (LP: #2009067)

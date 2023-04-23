@@ -1,3 +1,10 @@
+livecd-rootfs (2.836) lunar; urgency=medium
+
+  * Move ubuntu-asahi installation to add_task.
+  * Fix desktop-preinstalled
+
+ -- Tobias Heider <tobias.heider@canonical.com>  Sun, 23 Apr 2023 02:33:24 +0200
+
 livecd-rootfs (2.835) lunar; urgency=medium
 
   * Install asahi packages for desktop-preinstalled

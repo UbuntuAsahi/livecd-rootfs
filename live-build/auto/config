@@ -714,6 +714,8 @@ case $PROJECT in
 				;;
 			desktop-preinstalled)
 				add_task install minimal standard ubuntu-desktop
+				KERNEL_FLAVOURS='asahi'
+				add_package live ubuntu-asahi
 				case $SUBARCH in
 					raspi)
 						add_task install ubuntu-desktop-raspi

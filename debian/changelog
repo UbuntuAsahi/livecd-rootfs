@@ -1,3 +1,9 @@
+livecd-rootfs (2.837) lunar; urgency=medium
+
+  * Revert previous, use add_package for ubuntu-asahi
+
+ -- Tobias Heider <tobias.heider@canonical.com>  Sun, 23 Apr 2023 14:13:53 +0200
+
 livecd-rootfs (2.836) lunar; urgency=medium
 
   * Move ubuntu-asahi installation to add_task.

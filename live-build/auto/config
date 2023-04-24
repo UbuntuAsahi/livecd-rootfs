@@ -341,7 +341,7 @@ if [ -z "${IMAGEFORMAT:-}" ]; then
 	case $PROJECT:${SUBPROJECT:-} in
 		ubuntu-cpc:*|ubuntu:desktop-preinstalled|ubuntu-wsl:*)
 			case $SUBARCH in
-				raspi|intel-iot)
+				asahi|raspi|intel-iot)
 					IMAGEFORMAT=ubuntu-image
 					;;
 				*)
@@ -715,9 +715,14 @@ case $PROJECT in
 				;;
 			desktop-preinstalled)
 				add_task install minimal standard ubuntu-desktop
-				KERNEL_FLAVOURS='asahi'
-				add_package install ubuntu-asahi
 				case $SUBARCH in
+					asahi)
+						OPTS="${OPTS:+$OPTS }--initramfs=none"
+						OPTS="${OPTS:+$OPTS }--system=normal"
+						OPTS="${OPTS:+$OPTS }--hdd-label=cloudimg-rootfs"
+						OPTS="${OPTS:+$OPTS }--ext-resize-blocks=536870912 --ext-block-size=4096"
+						OPTS="${OPTS:+$OPTS }--ext-fudge-factor=15"
+						;;
 					raspi)
 						add_task install ubuntu-desktop-raspi
 						# XXX: Are those actually needed? I see we use those for ubuntu-cpc, which is the project
@@ -1256,6 +1261,10 @@ case "$ARCH${SUBARCH:++$SUBARCH}" in
 		# per-project/subproject cases above
 		add_package install linux-firmware-raspi pi-bluetooth u-boot-rpi u-boot-tools
 		BINARY_REMOVE_LINUX=false
+		;;
+	arm64+asahi)
+		KERNEL_FLAVOURS="$SUBARCH"
+		add_package install ubuntu-asahi
 		;;
 	arm64+tegra)
 		# Common configuration for all NVIDIA Tegra image variants (server,

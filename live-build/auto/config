@@ -706,9 +706,6 @@ case $PROJECT in
 				LIVE_TASK='ubuntu-live'
 				add_task install minimal standard ubuntu-desktop
 				add_task live ubuntu-desktop-minimal-default-languages ubuntu-desktop-default-languages
-				KERNEL_FLAVOURS='asahi'
-				add_package install ubuntu-asahi
-				add_package live ubuntu-asahi
 				if [ "$SUBARCH" = "intel-iot" ]; then
 					KERNEL_FLAVOURS='intel-iotg'
 				fi
@@ -814,8 +811,6 @@ case $PROJECT in
 				add_task minimal.standard ubuntu-desktop ubuntu-desktop-default-languages
 				add_task minimal.standard.live ubuntu-live
 				add_package minimal cloud-init
-				KERNEL_FLAVOURS='asahi'
-				add_package minimal ubuntu-asahi
 				remove_package minimal.standard.live ubiquity-frontend-gtk
 				add_snap minimal.standard.live ubuntu-desktop-installer/classic
 
@@ -1264,7 +1259,7 @@ case "$ARCH${SUBARCH:++$SUBARCH}" in
 		;;
 	arm64+asahi)
 		KERNEL_FLAVOURS="$SUBARCH"
-		add_package install ubuntu-asahi
+		add_package install ubuntu-asahi grub-efi
 		;;
 	arm64+tegra)
 		# Common configuration for all NVIDIA Tegra image variants (server,

@@ -1,3 +1,9 @@
+livecd-rootfs (2.838) lunar; urgency=medium
+
+  * Copy asahi desktop-preinstalled from raspi
+
+ -- Tobias Heider <tobias.heider@canonical.com>  Mon, 24 Apr 2023 15:54:43 +0200
+
 livecd-rootfs (2.837) lunar; urgency=medium
 
   * Revert previous, use add_package for ubuntu-asahi

@@ -1259,6 +1259,7 @@ case "$ARCH${SUBARCH:++$SUBARCH}" in
 		;;
 	arm64+asahi)
 		KERNEL_FLAVOURS="$SUBARCH"
+		add_package install gpg gpg-agent
 		add_package install ubuntu-asahi grub-efi
 		;;
 	arm64+tegra)

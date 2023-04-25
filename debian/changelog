@@ -1,3 +1,9 @@
+livecd-rootfs (2.839) lunar; urgency=medium
+
+  * Handle asahi as subarch like raspi
+
+ -- Tobias Heider <tobias.heider@canonical.com>  Tue, 25 Apr 2023 02:10:33 +0200
+
 livecd-rootfs (2.838) lunar; urgency=medium
 
   * Copy asahi desktop-preinstalled from raspi

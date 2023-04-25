@@ -1,3 +1,9 @@
+livecd-rootfs (2.840) lunar; urgency=medium
+
+  * Install gpg for asahi when needed
+
+ -- Tobias Heider <tobias.heider@canonical.com>  Tue, 25 Apr 2023 18:22:40 +0200
+
 livecd-rootfs (2.839) lunar; urgency=medium
 
   * Handle asahi as subarch like raspi

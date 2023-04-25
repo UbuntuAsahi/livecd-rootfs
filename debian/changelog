@@ -1,3 +1,9 @@
+livecd-rootfs (2.841) lunar; urgency=medium
+
+  * Fix asahi gadget path
+
+ -- Tobias Heider <tobias.heider@canonical.com>  Wed, 26 Apr 2023 01:12:42 +0200
+
 livecd-rootfs (2.840) lunar; urgency=medium
 
   * Install gpg for asahi when needed

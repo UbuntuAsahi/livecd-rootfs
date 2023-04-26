@@ -1,3 +1,10 @@
+livecd-rootfs (2.843) lunar; urgency=medium
+
+  * Handle short options for pseudo-grub-probe. This is needed for our
+    update-grub script from asahi-script.
+
+ -- Tobias Heider <tobias.heider@canonical.com>  Wed, 26 Apr 2023 15:00:48 +0200
+
 livecd-rootfs (2.842) lunar; urgency=medium
 
   * Fix uncomment

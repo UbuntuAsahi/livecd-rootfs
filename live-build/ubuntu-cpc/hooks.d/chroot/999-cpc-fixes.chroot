@@ -222,9 +222,9 @@ EOF
 # Sometimes grub is not installed yet (i.e. uefi arm images). Overall
 # it is odd that we run this out of chroot hooks, instead of binary
 # hooks. I wonder if we can move all of this to disk-image hooks.
-if [ -x "${rootd}/usr/sbin/update-grub" ]; then
-    _xchroot "${rootd}" update-grub
-fi
+# if [ -x "${rootd}/usr/sbin/update-grub" ]; then
+#     _xchroot "${rootd}" update-grub
+# fi
 
 # reconfigure grub so that upgrades to grub-pc do not force a debconf config
 # changed prompt (LP: #1009294).  This re-runs update-grub

@@ -1,3 +1,9 @@
+livecd-rootfs (2.844) lunar; urgency=medium
+
+  * Disable update-grub in cpc-fixes chroot hook
+
+ -- Tobias Heider <tobias.heider@canonical.com>  Wed, 26 Apr 2023 18:51:41 +0200
+
 livecd-rootfs (2.843) lunar; urgency=medium
 
   * Handle short options for pseudo-grub-probe. This is needed for our

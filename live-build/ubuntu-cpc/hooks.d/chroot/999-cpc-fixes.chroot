@@ -143,7 +143,7 @@ EOF
 }
 bad_Usage() { Usage 1>&2; fail "$@"; }
 
-short_opts=""
+short_opts="m:,t:,d"
 long_opts="device-map:,target:,device"
 getopt_out=$(getopt --name "${0##*/}" \
    --options "${short_opts}" --long "${long_opts}" -- "$@") &&
@@ -158,9 +158,9 @@ arg=""
 while [ $# -ne 0 ]; do
    cur=${1}; next=${2};
    case "$cur" in
-      --device-map) device_map=${next}; shift;;
-      --device) device=1;;
-      --target) target=${next}; shift;;
+      -m | --device-map) device_map=${next}; shift;;
+      -d | --device) device=1;;
+      -t | --target) target=${next}; shift;;
       --) shift; break;;
    esac
    shift;

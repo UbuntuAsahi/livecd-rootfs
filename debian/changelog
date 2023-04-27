@@ -1,3 +1,9 @@
+livecd-rootfs (2.845) lunar; urgency=medium
+
+  * Disable cpc-fixes hook for arm64
+
+ -- Tobias Heider <tobias.heider@canonical.com>  Thu, 27 Apr 2023 18:19:10 +0200
+
 livecd-rootfs (2.844) lunar; urgency=medium
 
   * Disable update-grub in cpc-fixes chroot hook

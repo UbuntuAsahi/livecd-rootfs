@@ -1,3 +1,9 @@
+livecd-rootfs (2.838) lunar; urgency=medium
+
+  * Fix syntax error
+
+ -- Tobias Heider <me@tobhe.de>  Sun, 14 May 2023 23:17:54 +0200
+
 livecd-rootfs (2.837) lunar; urgency=medium
 
   [ Tobias Heider ]

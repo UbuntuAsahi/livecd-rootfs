@@ -820,7 +820,6 @@ case $PROJECT in
 						add_package minimal cloud-init
 						;;
 				esac
-				;;
 				remove_package minimal.standard.live ubiquity-frontend-gtk
 				add_snap minimal.standard.live ubuntu-desktop-installer/classic
 

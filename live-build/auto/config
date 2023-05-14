@@ -812,7 +812,14 @@ case $PROJECT in
 				add_task minimal minimal standard ubuntu-desktop-minimal ubuntu-desktop-minimal-default-languages
 				add_task minimal.standard ubuntu-desktop ubuntu-desktop-default-languages
 				add_task minimal.standard.live ubuntu-live
-				add_package minimal cloud-init
+				case $SUBARCH in
+					asahi)
+						add_package minimal ubuntu-asahi grub-efi
+						;;
+					*)
+						add_package minimal cloud-init
+						;;
+				esac
 				remove_package minimal.standard.live ubiquity-frontend-gtk
 				add_snap minimal.standard.live ubuntu-desktop-installer/classic
 

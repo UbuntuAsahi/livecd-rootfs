@@ -1,86 +1,25 @@
-livecd-rootfs (2.846) lunar; urgency=medium
-
-  * Install ubuntu-asahi and grub-efi in minimal on asahi, drop cloud-init
-
- -- Tobias Heider <tobias.heider@canonical.com>  Sun, 14 May 2023 22:48:08 +0200
-
-livecd-rootfs (2.845) lunar; urgency=medium
-
-  * Disable cpc-fixes hook for arm64
-
- -- Tobias Heider <tobias.heider@canonical.com>  Thu, 27 Apr 2023 18:19:10 +0200
-
-livecd-rootfs (2.844) lunar; urgency=medium
-
-  * Disable update-grub in cpc-fixes chroot hook
-
- -- Tobias Heider <tobias.heider@canonical.com>  Wed, 26 Apr 2023 18:51:41 +0200
-
-livecd-rootfs (2.843) lunar; urgency=medium
-
-  * Handle short options for pseudo-grub-probe. This is needed for our
-    update-grub script from asahi-script.
-
- -- Tobias Heider <tobias.heider@canonical.com>  Wed, 26 Apr 2023 15:00:48 +0200
-
-livecd-rootfs (2.842) lunar; urgency=medium
-
-  * Fix uncomment
-
- -- Tobias Heider <tobias.heider@canonical.com>  Wed, 26 Apr 2023 10:04:42 +0200
-
-livecd-rootfs (2.841) lunar; urgency=medium
-
-  * Fix asahi gadget path
-
- -- Tobias Heider <tobias.heider@canonical.com>  Wed, 26 Apr 2023 01:12:42 +0200
-
-livecd-rootfs (2.840) lunar; urgency=medium
-
-  * Install gpg for asahi when needed
-
- -- Tobias Heider <tobias.heider@canonical.com>  Tue, 25 Apr 2023 18:22:40 +0200
-
-livecd-rootfs (2.839) lunar; urgency=medium
-
-  * Handle asahi as subarch like raspi
-
- -- Tobias Heider <tobias.heider@canonical.com>  Tue, 25 Apr 2023 02:10:33 +0200
-
-livecd-rootfs (2.838) lunar; urgency=medium
-
-  * Copy asahi desktop-preinstalled from raspi
-
- -- Tobias Heider <tobias.heider@canonical.com>  Mon, 24 Apr 2023 15:54:43 +0200
-
 livecd-rootfs (2.837) lunar; urgency=medium
-
-  * Revert previous, use add_package for ubuntu-asahi
-
- -- Tobias Heider <tobias.heider@canonical.com>  Sun, 23 Apr 2023 14:13:53 +0200
-
-livecd-rootfs (2.836) lunar; urgency=medium
-
-  * Move ubuntu-asahi installation to add_task.
-  * Fix desktop-preinstalled
-
- -- Tobias Heider <tobias.heider@canonical.com>  Sun, 23 Apr 2023 02:33:24 +0200
-
-livecd-rootfs (2.835) lunar; urgency=medium
-
-  * Install asahi packages for desktop-preinstalled
-
- -- Tobias Heider <tobias.heider@canonical.com>  Sun, 23 Apr 2023 02:13:41 +0200
-
-livecd-rootfs (2.834) lunar; urgency=medium
 
   [ Tobias Heider ]
   * Install asahi kernel and meta
+  * Install asahi packages for desktop-preinstalled
+  * Move ubuntu-asahi installation to add_task.
+  * Fix desktop-preinstalled
+  * Revert previous, use add_package for ubuntu-asahi
+  * Copy asahi desktop-preinstalled from raspi
+  * Handle asahi as subarch like raspi
+  * Install gpg for asahi when needed
+  * Fix asahi gadget path
+  * Handle short options for pseudo-grub-probe. This is needed for our
+    update-grub script from asahi-script.
+  * Disable update-grub in cpc-fixes chroot hook
+  * Disable cpc-fixes hook for arm64
+  * Install ubuntu-asahi and grub-efi in minimal on asahi, drop cloud-init
 
   [ Dimitri John Ledkov ]
   * auto/config: Add support for ubuntu core arm64 generic images (LP: #2009067)
 
- -- Tobias Heider <me@tobhe.de>  Sat, 15 Apr 2023 13:01:19 +0200
+ -- Tobias Heider <me@tobhe.de>  Sun, 14 May 2023 22:48:08 +0200
 
 livecd-rootfs (2.836) mantic; urgency=medium
 

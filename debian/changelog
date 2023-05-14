@@ -1,3 +1,9 @@
+livecd-rootfs (2.846) lunar; urgency=medium
+
+  * Install ubuntu-asahi and grub-efi in minimal on asahi, drop cloud-init
+
+ -- Tobias Heider <tobias.heider@canonical.com>  Sun, 14 May 2023 22:48:08 +0200
+
 livecd-rootfs (2.845) lunar; urgency=medium
 
   * Disable cpc-fixes hook for arm64

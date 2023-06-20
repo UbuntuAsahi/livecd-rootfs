@@ -947,7 +947,9 @@ case $PROJECT in
 		add_package live ubiquity-ubuntu-artwork ubiquity-slideshow-ubuntu
 		add_package live a11y-profile-manager
 		add_package live gparted cifs-utils
-		add_package live memtest86+
+		if [ $ARCH == amd64 ]; then
+			add_package live memtest86+
+		fi
 		;;
 
 	ubuntustudio-dvd)

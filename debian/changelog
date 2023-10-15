@@ -1,3 +1,9 @@
+livecd-rootfs (23.10.55asahi1) mantic; urgency=medium
+
+  * Add Ubuntu Asahi support
+
+ -- Tobias Heider <me@tobhe.de>  Sun, 15 Oct 2023 21:11:24 +0200
+
 livecd-rootfs (23.10.55) mantic; urgency=medium
 
   * fix: add 6.5 kernel appamor features to livecd-rootfs based on

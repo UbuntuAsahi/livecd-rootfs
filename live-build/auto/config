@@ -1212,6 +1212,10 @@ case "$ARCH${SUBARCH:++$SUBARCH}" in
 		# (server, desktop etc.)
 		KERNEL_FLAVOURS="nvidia-$SUBARCH"
 		;;
+	arm64+asahi)
+		KERNEL_FLAVOURS="apple-arm"
+		add_package install ubuntu-asahi grub-efi-arm64
+		;;
 	riscv*+*)
 		if [ "${SUBARCH:-}" = "licheerv" ]; then
 			# The wifi driver of the licheerv is an out-of-tree driver packaged

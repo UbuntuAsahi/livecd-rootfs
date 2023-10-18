@@ -551,6 +551,11 @@ _snap_preseed() {
         return
     fi
 
+    # Use asahi channel
+    if [ "$SNAP_NAME" = gnome-42-2204 ]; then
+            CHANNEL="asahi/stable"
+    fi
+
     sh -c "
         set -x;
         cd \"$CHROOT_ROOT/var/lib/snapd/seed\";

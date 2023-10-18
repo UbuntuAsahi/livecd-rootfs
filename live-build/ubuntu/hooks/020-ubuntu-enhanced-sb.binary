@@ -65,7 +65,7 @@ snaps:
     name: firefox
     type: app
   -
-    default-channel: asahi/stable
+    default-channel: latest/stable/ubuntu-23.10
     id: lATO8HzwVvrAPrlZRAWpfyrJKlAJrZS3
     name: gnome-42-2204
     type: app
